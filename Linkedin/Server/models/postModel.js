@@ -12,6 +12,14 @@ const postSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
+    },
+    _userName: {
+        type: String,
+        required: true
+    },
+    _imageId: {
+        type: String,
+        required: false
     }
 
 })

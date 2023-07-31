@@ -3,7 +3,8 @@ const express = require('express');
 const router = express.Router();
 const authentication = require('../middleware/authentication');
 
-router.post('/create/:id', authentication, postController.createPost)
+router.post('/create/:userEmail', postController.createPost, authentication)
+// router.post('/create/:id', postController.createPost)
 // router.get('/get', authentication, postController.getPosts)
 router.get('/get', authentication, postController.getPosts)
 

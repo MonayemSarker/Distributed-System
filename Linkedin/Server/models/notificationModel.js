@@ -9,6 +9,10 @@ const NotificationSchema = new mongoose.Schema({
     _postId: {
         type: mongoose.Types.ObjectId,
         required: true
+    },
+    _userName: {
+        type: String,
+        required: true
     }
 })
 
