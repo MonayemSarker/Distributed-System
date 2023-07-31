@@ -1,0 +1,26 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="inputName">Enter Name</label>
+            <input #nameInput type="text" class="form-control" id="inputName" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail2">Enter Email address</label>
+            <input #emailInput type="email" class="form-control" id="inputEmail2" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword2">Enter Password</label>
+            <input #pwInput type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="inputPasswordConfirm">Confirm Password</label>
+            <input #pwInputConfirm type="password" class="form-control" id="inputPasswordConfirm"
+                placeholder="Password">
+        </div>
+        <div class="other-button">
+
+            <button type="submit" class="btn btn-outline-success d-block mx-auto"
+                (click)="onRegisterButtonClicked(emailInput.value, pwInput.value, pwInputConfirm.value, nameInput.value)">Register</button>
+        </div>
+    </form>
+</div>
