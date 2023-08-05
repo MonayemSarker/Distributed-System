@@ -1,0 +1,19 @@
+<nav class="navbar" *ngIf=isToken>
+    <div class="logo">
+        <img src="../assets/images/logo.jpg" alt="Your App Logo">
+    </div>
+    <div class="nav-links">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/notification">Notifications</a>
+        <button class="create-post-btn" (click)="togglePostPopup()">+ Post</button>
+    </div>
+</nav>
+
+<!-- Modal for creating a post -->
+<div class="modal" *ngIf=isPostPopupVisible>
+    <div class="modal-content">
+        <textarea placeholder="Write your post..." [(ngModel)]="postContent"></textarea>
+        <button (click)="cancelPost()">Cancel</button>
+        <button (click)="submitPost()">Post</button>
+    </div>
+</div>

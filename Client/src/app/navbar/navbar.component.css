@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* .navbar {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+} */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.create-post-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 2px 10px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.popup-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.popup-content button:last-child {
+    background-color: #00000069;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 40%;
+    max-width: 500px;
+    /* Set a maximum width to prevent it from becoming too wide */
+    height: 40vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+
+
+.show-modal {
+    display: flex;
+}
+
+
+
+.modal-content textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.modal-content button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}

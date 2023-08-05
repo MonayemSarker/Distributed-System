@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+
+#logo {
+    margin-bottom: 90px;
+}
+
+.form-group {
+    text-align: center;
+    font-weight: 300;
+}
+
+.other-buttons {
+    margin-top: 20px;
+    /* margin-right: 1px; */
+}
