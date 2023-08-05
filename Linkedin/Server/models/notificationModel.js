@@ -4,7 +4,7 @@ const NotificationSchema = new mongoose.Schema({
     notification: {
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     _postId: {
         type: mongoose.Types.ObjectId,
@@ -13,7 +13,11 @@ const NotificationSchema = new mongoose.Schema({
     _userName: {
         type: String,
         required: true
-    }
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
 })
 
 const Notifications = mongoose.model('Notifications', NotificationSchema);

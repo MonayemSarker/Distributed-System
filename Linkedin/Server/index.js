@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
 const cors = require('cors');;
 const bodyParser = require('body-parser');
+// const { minIoClient } = require('./controller/postController');
 
 app.use(cors());
 app.use(express.json());
@@ -16,6 +17,9 @@ app.use('/user', routerUser);
 const routerPost = require('./routes/postRoute.js')
 app.use('/post', routerPost);
 
+const routerNotification = require('./routes/notificationRoute.js')
+app.use('/notification', routerNotification);
+
 const port = process.env.PORT
 
 mongoose.connect("mongodb://localhost:27017/LinkedIn?retryWrites=true&w=majority").then((result) => {
@@ -23,6 +27,10 @@ mongoose.connect("mongodb://localhost:27017/LinkedIn?retryWrites=true&w=majority
         console.log("Server is running on port " + port);
     })
 })
+
+
+
+
 app.get('/', (req, res) => {
     console.log(port)
     res.json({ message: 'Hello' })
